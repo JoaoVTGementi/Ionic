@@ -1,0 +1,32 @@
+<!--
+  Generated template for the AbrirChamadoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Novo chamado</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-label color="primary" stacked>Novo Chamado:</ion-label>
+  <ion-list>
+    <ion-item>
+      <ion-label>Selecione</ion-label>
+      <ion-select [(ngModel)]="fila">
+        <ion-option value="1">Novos Projetos</ion-option>
+        <ion-option value="2">Manutenção Sistema de Vendas</ion-option>
+        <ion-option value="3">Servidores</ion-option>
+        <ion-option value="4">Redes</ion-option>
+        <ion-option value="5">Telefonia</ion-option>
+        <ion-option value="6">Desktops</ion-option>
+      </ion-select>
+    </ion-item>
+      <ion-label color="primary" stacked>Descrição:</ion-label>
+        <ion-textarea type="descricao" placeholder="Escreva aqui...">
+        </ion-textarea>
+    </ion-list>
+    <button ion-button round>Enviar</button>
+</ion-content>

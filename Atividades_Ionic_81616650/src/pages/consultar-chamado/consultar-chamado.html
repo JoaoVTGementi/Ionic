@@ -1,0 +1,33 @@
+<!--
+  Generated template for the ConsultarChamadoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Consultar Chamados
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-label color="primary" stacked>Consultar Chamado:</ion-label>
+    <ion-list>
+      <ion-item>
+        <ion-label>Selecione</ion-label>
+        <ion-select [(ngModel)]="fila" interface="popover">
+          <ion-option value="all">Todos</ion-option>
+          <ion-option value="1">Novos Projetos</ion-option>
+          <ion-option value="2">Manutenção Sistema de Vendas</ion-option>
+          <ion-option value="3">Servidores</ion-option>
+          <ion-option value="4">Redes</ion-option>
+          <ion-option value="5">Telefonia</ion-option>
+          <ion-option value="6">Desktops</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <button ion-button round>Listar</button>
+</ion-content>
+
